@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration:none;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  padding:1% 10%;
+  background: #eee;
+  z-index:999;
+
+  
+}
+header .Icons img{
+  width:40px;
+  padding:0px;
+  transition:1s ease-out;
+  border-radius:50%;
+}
+header .Icons img:hover{
+  border:3px solid;
+  transform :rotate(720deg);
+  background:#fff;
+}
+header .Menu{
+  position:absolute;
+  top:110%;
+  left:-100%;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  width:100%;
+  padding: 5% 0;
+  background: #000;
+  transition:1s ease;
+  
+}
+header .Menu.active{
+  left:0%;
+  color:#000;
+}
+header .Menu a{
+  color:#fff;
+  margin-bottom:1%;
+  padding:.5% 2%;
+  width:80%;
+  transition:.7s ease-in-out;
+}
+header .Menu a:hover{
+  transform:scale(1.009);
+  box-sizing:border-box;
+  background: rgb(255,255,255);
+  border-radius: 10px;
+  color:#000;
+}
+section{
+  padding:10% 0;
+}
+
+#Home{
+  width:100%;
+  height:80vh;
+  background:url(Img/Fond1.png);
+  background-size:cover ;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+#Home .Titre h1{
+  color:#fff;
+  font-size:3rem;
+  text-align: center;
+}
+#Home .Titre p{
+  color:#fff;
+  font-size:1rem;
+  text-align: center;
+}
+#Definition{
+  padding:5% 5%;
+}
+#Definition h1{
+  font-size:2rem;
+  padding:5% 0;
+}
+#Definition p {
+  padding: 2% 0;
+}
+#Definition img,#solution img{
+  width:100%;
+  height:auto;
+}
+#Signe{
+  padding:5% 5%;
+  background: rgba(0,0,0,0.9);
+  color:#fff;
+}
+
+#Signe h1{
+  font-size:2rem;
+  padding:5% 5%;
+}
+
+#Signe .Signe1{
+  padding:3% 2%;
+}
+
+#Signe .Signe1 h4{
+  font-size:1.5rem;
+  padding-bottom: 2%
+}
+#solution{
+  padding:5% 5%;
+}
+#solution h1{
+  padding:5% 5%;
+  font-size:2rem;
+}
+#solution .Solution1{
+  display:flex;
+  justify-content:space-evenly;
+  gap:20px;
+  flex-wrap:wrap;
+  padding:10% 0;
+}
+#solution .Solution1 .S1{
+  width:45%;
+  padding:3%;
+  background:#000000BF;
+  color:#fff;
+  margin-top:40px;
+  box-sizing:border-box;
+  box-shadow: 3px 3px 0 rgba(0,0,0,0.5);
+}
+#Amour{
+  padding:5% 5%;
+  background: #000;
+  color:#fff;
+  
+}
+#Amour h1{
+  font-size:2rem;
+  padding: 5% 5%;
+  margin-top:7%;
+}
+footer{
+  padding:2% 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap:wrap;
+  color:#fff;
+  background: #000000BF;
+
+  
+}
+footer .Logo img{
+  padding:3px;
+  background:#fff;
+  border-radius:50%;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px){
+  
+  
+  #solution .Solution1 .S1{
+    width: 100%;
+  }
+  #solution .Solution1 .S1 h1{
+    font-size: 1.1rem
+  }
+  p{
+    font-size:0.6rem;
+  }
+  #Signe .Signe1 h4 {
+    font-size: 0.9rem;
+  }
+  #Signe h1,#solution h1,#Definition h1,#Amour h1{
+    font-size: 1.2rem
+}
